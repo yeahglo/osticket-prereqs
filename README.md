@@ -81,13 +81,33 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 </p>
 
 **Step 5: Install the Requirements**
-- Download and install PHP Manager for IIS (look out 
+- Make sure to override any additional security prompts if you see them
+- Download and install PHP Manager for IIS
 - Install Rewrite Module
 - Create C:\PHP directory by going to C: Drive > Right click > New > Folder > name it "PHP"
 - Download PHP 7.3.8 files (be on the look for any extra prompts) > Right click > Extract All > Browse to the "PHP" folder > Extract
-- Download and install VC Redistributable 
+- Download and install VC Redistributable
 
 <p>
 <img width="935" alt="Screen Shot 2023-06-26 at 4 54 13 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/0da5b2b3-1750-4f49-8c4c-69e371bfff67">
+</p>
+
+**Step 6: Install and Configure MySQL**
+- Download and install MySQL 5.5.62
+- Choose "Typical" installation
+- Make sure to launch the Configuration Wizard
+- Choose a "Standard Configuration"
+- Use a simple password such as "Password1" (Note: Always choose strong passwords in actual production)
+
+<p>
+<img width="500" alt="Screen Shot 2023-06-25 at 12 42 16 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/d5432980-7d50-4df6-b88e-7f7b1693df2a">
+</p>
+
+**Step 7: Make Changes in the IIS Admin Panel**
+- Search for IIS > Right click it to run it as admin
+-  At the "vm-osticket" level, open the PHP Manager > Select a principal > browse to 
+
+<p>
+<img width="1039" alt="Screen Shot 2023-06-25 at 12 45 47 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/01d2b90c-94cc-4d71-84fb-3925afb9ca70">
 </p>
 -->
