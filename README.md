@@ -1,4 +1,5 @@
 <!-- os prereqs placeholder
+
 <p align="center">
 
 </p>
@@ -72,18 +73,21 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **Step 4: Test IIS:**
 - Open a web broswer tab and type in "127.0.0.1"
-- Note whether you see an IIS page (see image below), if you don't, you'll need to make sure you chose the right IIS settings before moving forward
+- To ensure IIS enabled, you should see something similar to the browser on the right, below
 </br>
 
 <p>
-<img width="547" alt="Screen Shot 2023-06-25 at 12 27 22 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/9dd3142f-d84c-4a5a-a64e-c56468de2b7e">
+<img width="797" alt="Screen Shot 2023-06-26 at 10 03 05 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/3ad1c78e-d865-4149-a072-accd8a18f869">
 </p>
 
 **Step 5: Install the Requirements**
-- Install PHP Manager for IIS
+- Download and install PHP Manager for IIS (look out 
+- Install Rewrite Module
+- Create C:\PHP directory by going to C: Drive > Right click > New > Folder > name it "PHP"
+- Download PHP 7.3.8 files (be on the look for any extra prompts) > Right click > Extract All > Browse to the "PHP" folder > Extract
+- Download and install VC Redistributable 
 
-<img width="499" alt="Screen Shot 2023-06-25 at 12 28 10 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/10fcbe08-ee7c-4552-9d63-4b6bca29ab3a">
-
-- Make sure to choose "Download Anyway" or "Keep Anyway" if prompted on a warning about downloading the files
-<img width="561" alt="Screen Shot 2023-06-25 at 12 27 53 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/45cf3727-a039-4171-9e6c-7ff786fb2023">
+<p>
+<img width="935" alt="Screen Shot 2023-06-26 at 4 54 13 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/0da5b2b3-1750-4f49-8c4c-69e371bfff67">
+</p>
 -->
