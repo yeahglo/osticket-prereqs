@@ -105,7 +105,9 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **Step 7: Make Changes in the IIS Admin Panel**
 - Search for IIS > Right click it to run it as admin
--  At the "vm-osticket" level, open the PHP Manager > Select a principal > browse to 
+- At the "vm-osticket" level, open the PHP Manager > Select a principal > browse to and open the php.cgi file
+- At rhe "vm-osticket" level, restart the server from the right sidebar menu
+
 
 <p>
 <img width="1039" alt="Screen Shot 2023-06-25 at 12 45 47 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/01d2b90c-94cc-4d71-84fb-3925afb9ca70">
