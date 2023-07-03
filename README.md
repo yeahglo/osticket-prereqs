@@ -1,5 +1,4 @@
-<!--
-<h1>osTicket - Prerequisites and Installation</h1>
+<!--<h1>osTicket - Prerequisites and Installation</h1>
 This is a walkthrough of the installation and set up for the open-source ticketing software, osTicket. You can use this walkthrough to follow along and even try it for yourself.<br />
 
 <h2>Environments and Technologies Used</h2>
@@ -86,7 +85,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Choose "Typical" installation
 - Make sure to launch the Configuration Wizard
 - Choose a "Standard Configuration"
-- Use a simple password such as "Password1" (Note: Always choose strong passwords in actual production)
+- Use a simple password such as "Password1" _(Note: Always choose strong passwords in actual production)_
 
 <p>
 <img width="500" alt="Screen Shot 2023-06-25 at 12 42 16 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/d5432980-7d50-4df6-b88e-7f7b1693df2a">
@@ -105,7 +104,8 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 **Step 8: Install osTicket Files and Set Up Installer**
 - Download osTicket files
 - Open a 2nd file explorer window, navigate to C: > inetpub > wwwroot
-- Drag the upload from osTicket files to wwwroot to copy files over
+- Drag the "Upload" folder from the osTicket files to wwwroot to copy files over
+- Rename the file, from "Upload" to "osTicket"
 - At rhe "vm-osticket" level in the admin for IIS, restart the server from the right sidebar menu again
 - Navigate to Sites > Default > osTicket
 - From the right sidebar, click "Browse *:80"
@@ -116,6 +116,25 @@ _Note: At this point, osTicket Installer should be open in the browser. If it's 
 - Navigate back Sites > Default > osTicket in the admin IIS panel
 - Open PHP Manager at this level and scroll down to click "Enable or disable an extension"
 - Enable the following 3 extensions: php_imap.dll, php_intl.dll, and php.opcache.dll
-- Refresh the osTicket Installer in your browser
+- Refresh the osTicket Installer in your browser (you should see more checkmarks where it lists the extensions)
+- Navigate to your C: Drive > inetpub > wwwroot > osTicket > Include > ost-sampleconfig.php
+- Remove the "sample" part of the name, so that it reads "ost-config.php"
+- Right click on the folder > Advanced > Disable Inheritance > Remove All
+- Set New Permissions > Everyone (click "Check Names" to populate) > Check All permissions and apply them
 
--->
+**Step 10: Continue Setting Up in the Browser**
+- Click Continue
+- Fill out each part of the form - choose a name, default email, and user information
+
+**Step 11: Instal HeidiSQL**
+- Download and open Heidi SQL
+- Username will be "root", Password will be "Password1" _(Note: Never do this in actual production.)_
+- Create a new session connection 
+- Open a connection and right click to create a database called "osTicket"
+
+**Step 12: Finish Setup in the Broswer**
+- MySQL DB: osTicket
+- MySQL user/password: root/Password1
+- Click Install Now
+
+_Note: If it's installed correctly, you should now see a Congratulations page telling you so. Make sure you copy all the links at the bottom of this page so that you know where to login and find documentation._-->
