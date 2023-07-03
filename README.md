@@ -1,17 +1,6 @@
-<!-- os prereqs placeholder
-
-<p align="center">
-
-</p>
-
+<!--
 <h1>osTicket - Prerequisites and Installation</h1>
-This is a walkthrough of the installation and set up for the open-source ticketing software, osTicket. You can use this walkthrough to follow along and even try it for yourself!<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
+This is a walkthrough of the installation and set up for the open-source ticketing software, osTicket. You can use this walkthrough to follow along and even try it for yourself.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -112,4 +101,21 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 <p>
 <img width="1039" alt="Screen Shot 2023-06-25 at 12 45 47 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/01d2b90c-94cc-4d71-84fb-3925afb9ca70">
 </p>
+
+**Step 8: Install osTicket Files and Set Up Installer**
+- Download osTicket files
+- Open a 2nd file explorer window, navigate to C: > inetpub > wwwroot
+- Drag the upload from osTicket files to wwwroot to copy files over
+- At rhe "vm-osticket" level in the admin for IIS, restart the server from the right sidebar menu again
+- Navigate to Sites > Default > osTicket
+- From the right sidebar, click "Browse *:80"
+
+_Note: At this point, osTicket Installer should be open in the browser. If it's not, there may be an error in the setup._
+
+**Step 9: Enabling PHP Extensions and Configuring File Permissions**
+- Navigate back Sites > Default > osTicket in the admin IIS panel
+- Open PHP Manager at this level and scroll down to click "Enable or disable an extension"
+- Enable the following 3 extensions: php_imap.dll, php_intl.dll, and php.opcache.dll
+- Refresh the osTicket Installer in your browser
+
 -->
