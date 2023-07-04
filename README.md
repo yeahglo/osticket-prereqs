@@ -1,4 +1,4 @@
-<!--<h1>osTicket - Prerequisites and Installation</h1>
+<h1>osTicket - Prerequisites and Installation</h1>
 This is a walkthrough of the installation and set up for the open-source ticketing software, osTicket. You can use this walkthrough to follow along and even try it for yourself.<br />
 
 <h2>Environments and Technologies Used</h2>
@@ -25,13 +25,14 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Create a VM called "vm-osticket" (Use Windows 10 Pro, version 22H2 - x64 Gen2 and Standard_D4s_v3 - 4cpus, 16 GiB memory)
 - Make sure it auto populates to "RG-osTicket" for its resource group before the Review and Create step
 - Note the username and password you're creating for Windows 10
-- Make sure to checkmark the bottom part about licensing so you don't run into any issues (see 2nd image below)
 </br>
 
 <img width="812" alt="Screen Shot 2023-06-25 at 12 16 22 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/c17f13b1-04be-4c8d-ba37-f9db0340b4db"></p>
 <p>
 <img width="691" alt="Screen Shot 2023-06-25 at 12 17 41 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/ba93e774-64a3-4ae4-925f-bf393ad5af53"></p>
 
+_Note: Make sure to checkmark the bottom part about licensing so you don't run into any issues._
+</br>
 
 **Step 2: Log into the VM via RDP:**
 - Copy the Public IP Address from the VM (Virutal Machines > "vm-osticket" > copy Public IP address)
@@ -109,6 +110,8 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - At rhe "vm-osticket" level in the admin for IIS, restart the server from the right sidebar menu again
 - Navigate to Sites > Default > osTicket
 - From the right sidebar, click "Browse *:80"
+<img width="1230" alt="Screen Shot 2023-06-25 at 12 47 14 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/1a13b8ef-070e-485d-aec7-277af282d283">
+<img width="1036" alt="Screen Shot 2023-06-25 at 12 54 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8138f47e-57a8-4fd3-bc92-f5f140847e6c">
 
 _Note: At this point, osTicket Installer should be open in the browser. If it's not, there may be an error in the setup._
 
@@ -122,6 +125,10 @@ _Note: At this point, osTicket Installer should be open in the browser. If it's 
 - Right click on the folder > Advanced > Disable Inheritance > Remove All
 - Set New Permissions > Everyone (click "Check Names" to populate) > Check All permissions and apply them
 
+<img width="601" alt="Screen Shot 2023-06-25 at 12 59 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/018602fe-a6e9-4e3c-82e1-82a3811524fa">
+<img width="919" alt="Screen Shot 2023-06-25 at 1 46 28 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/bc3e8919-431e-42ee-b85a-636aac7e5d4b">
+
+
 **Step 10: Continue Setting Up in the Browser**
 - Click Continue
 - Fill out each part of the form - choose a name, default email, and user information
@@ -132,9 +139,13 @@ _Note: At this point, osTicket Installer should be open in the browser. If it's 
 - Create a new session connection 
 - Open a connection and right click to create a database called "osTicket"
 
+<img width="935" alt="Screen Shot 2023-06-25 at 1 35 35 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/c21a7d33-6683-4f79-8a6f-caed8a05dc4a">
+
 **Step 12: Finish Setup in the Broswer**
 - MySQL DB: osTicket
 - MySQL user/password: root/Password1
 - Click Install Now
 
-_Note: If it's installed correctly, you should now see a Congratulations page telling you so. Make sure you copy all the links at the bottom of this page so that you know where to login and find documentation._-->
+<img width="606" alt="Screen Shot 2023-06-25 at 1 37 45 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8e5c48a9-4201-4930-b0f3-ae36b32f69c9">
+
+_Note: If it's installed correctly, you should now see a Congratulations page telling you so. Make sure you copy all the links at the bottom of this page so that you know where to login and find documentation._
