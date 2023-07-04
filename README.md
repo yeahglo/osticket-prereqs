@@ -28,10 +28,11 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 </br>
 
 <img width="812" alt="Screen Shot 2023-06-25 at 12 16 22 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/c17f13b1-04be-4c8d-ba37-f9db0340b4db"></p>
+**_These are the settings you can use to create your VM, depending on your location. (If a different location in the world makes more sense for you, use that.)_**
 <p>
 <img width="691" alt="Screen Shot 2023-06-25 at 12 17 41 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/ba93e774-64a3-4ae4-925f-bf393ad5af53"></p>
 
-_Note: Make sure to checkmark the bottom part about licensing so you don't run into any issues._
+**_Make sure to checkmark the bottom part about licensing so you don't run into any issues._**
 </br>
 
 **Step 2: Log into the VM via RDP:**
@@ -42,6 +43,9 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 <p>
 <img width="835" alt="Screen Shot 2023-06-25 at 12 21 31 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/16904f4f-b371-4903-9719-703e74ffea4c">
 </p>
+
+**_This what RDP looks like on a Mac. You'll use the username and password you created when you set up Windows in the VM, here._**
+
 
 **Step 3: Enable Internet Information Services (IIS)**
 - Open IIS from the start menu (Right click start menu > Run > type in "control" > Programs > Programs and Features > Turn Windows Features on or off
@@ -55,10 +59,13 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 <img width="778" alt="Screen Shot 2023-06-25 at 12 24 54 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/650ba206-1435-4cbd-87a7-5622e959a694">
 </p>
 
+**_This shows you where you go to turn on IIS._**
 
 <p>
 <img width="746" alt="Screen Shot 2023-06-25 at 12 26 53 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/4834477e-e41c-47c8-bfd2-7356fa3a7d8b">
 </p>
+
+**_You'll find Internet Information Services you can install in this list. Make sure to turn on Web Management Tools if it's not on, as well._**
 
 **Step 4: Test IIS:**
 - Open a web broswer tab and type in "127.0.0.1"
@@ -68,6 +75,8 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 <p>
 <img width="797" alt="Screen Shot 2023-06-26 at 10 03 05 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/3ad1c78e-d865-4149-a072-accd8a18f869">
 </p>
+
+**_The left image shows the browser when you visit 127.0.0.1, before installing IIS. The right is what it looks like when it's up and running._**
 
 **Step 5: Install the Requirements**
 - Make sure to override any additional security prompts if you see them
@@ -81,6 +90,8 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 <img width="935" alt="Screen Shot 2023-06-26 at 4 54 13 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/0da5b2b3-1750-4f49-8c4c-69e371bfff67">
 </p>
 
+**_When you're installing files, you'll need to accept their terms and make sure you download files onto your VM._**
+
 **Step 6: Install and Configure MySQL**
 - Download and install MySQL 5.5.62
 - Choose "Typical" installation
@@ -90,6 +101,9 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 
 <p>
 <img width="500" alt="Screen Shot 2023-06-25 at 12 42 16 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/d5432980-7d50-4df6-b88e-7f7b1693df2a">
+
+**_The MySQL setup is straightforward, just make sure you launch the Configuration Wizard at the end._**
+  
 </p>
 
 **Step 7: Make Changes in the IIS Admin Panel**
@@ -102,6 +116,8 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 <img width="1039" alt="Screen Shot 2023-06-25 at 12 45 47 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/01d2b90c-94cc-4d71-84fb-3925afb9ca70">
 </p>
 
+**_This image shows you what it looks like before you register PHP in the admin panel for IIS._**
+
 **Step 8: Install osTicket Files and Set Up Installer**
 - Download osTicket files
 - Open a 2nd file explorer window, navigate to C: > inetpub > wwwroot
@@ -111,9 +127,12 @@ _Note: Make sure to checkmark the bottom part about licensing so you don't run i
 - Navigate to Sites > Default > osTicket
 - From the right sidebar, click "Browse *:80"
 <img width="1230" alt="Screen Shot 2023-06-25 at 12 47 14 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/1a13b8ef-070e-485d-aec7-277af282d283">
+
+**_With two file explorer windows open, you can easily drag the "Upload" folder over to your wwwroot folder and rename it to "osTicket"._**
+
 <img width="1036" alt="Screen Shot 2023-06-25 at 12 54 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8138f47e-57a8-4fd3-bc92-f5f140847e6c">
 
-_Note: At this point, osTicket Installer should be open in the browser. If it's not, there may be an error in the setup._
+**_At this point, osTicket Installer should open in the browser. If it's not, there is an error in the setup._**
 
 **Step 9: Enabling PHP Extensions and Configuring File Permissions**
 - Navigate back Sites > Default > osTicket in the admin IIS panel
@@ -126,20 +145,26 @@ _Note: At this point, osTicket Installer should be open in the browser. If it's 
 - Set New Permissions > Everyone (click "Check Names" to populate) > Check All permissions and apply them
 
 <img width="601" alt="Screen Shot 2023-06-25 at 12 59 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/018602fe-a6e9-4e3c-82e1-82a3811524fa">
+
+**_This is the first success page, you did it! Next, you'll need to enable the three PHP extensions._**
+
 <img width="919" alt="Screen Shot 2023-06-25 at 1 46 28 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/bc3e8919-431e-42ee-b85a-636aac7e5d4b">
 
+**_We give full control here to the ost-config.php file here so the software can do what it needs to on the backend._**
 
 **Step 10: Continue Setting Up in the Browser**
 - Click Continue
 - Fill out each part of the form - choose a name, default email, and user information
 
-**Step 11: Instal HeidiSQL**
+**Step 11: Install HeidiSQL**
 - Download and open Heidi SQL
 - Username will be "root", Password will be "Password1" _(Note: Never do this in actual production.)_
 - Create a new session connection 
 - Open a connection and right click to create a database called "osTicket"
 
 <img width="935" alt="Screen Shot 2023-06-25 at 1 35 35 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/c21a7d33-6683-4f79-8a6f-caed8a05dc4a">
+
+**_Heidi SQL allows us to go ahead and set up a MySQL database for our ticketing software to use._**
 
 **Step 12: Finish Setup in the Broswer**
 - MySQL DB: osTicket
@@ -148,4 +173,4 @@ _Note: At this point, osTicket Installer should be open in the browser. If it's 
 
 <img width="606" alt="Screen Shot 2023-06-25 at 1 37 45 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8e5c48a9-4201-4930-b0f3-ae36b32f69c9">
 
-_Note: If it's installed correctly, you should now see a Congratulations page telling you so. Make sure you copy all the links at the bottom of this page so that you know where to login and find documentation._
+**_You should now see a success page. Make sure to copy these links for the next step._**
