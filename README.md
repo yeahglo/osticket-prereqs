@@ -25,7 +25,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 <h2>Installation Steps</h2>
 
-**Step 1: Create the VM within Microsoft Azure:**
+**Step 1: Create the VM within Microsoft Azure**
 - Create a resource group called "RG-osTicket"
 - Create a VM called "vm-osticket" (Use Windows 10 Pro, version 22H2 - x64 Gen2 and Standard_D4s_v3 - 4cpus, 16 GiB memory)
 - Make sure it auto populates to "RG-osTicket" for its resource group before the Review and Create step
@@ -47,7 +47,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 </br>
 
-**Step 2: Log into the VM via RDP:**
+**Step 2: Log into the VM via RDP**
 - Copy the Public IP Address from the VM (Virutal Machines > "vm-osticket" > copy Public IP address)
 - Log in, using your Windows 10 username and password
 
@@ -84,7 +84,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 </br>
 
-**Step 4: Test IIS:**
+**Step 4: Test IIS**
 - Open a web broswer tab and type in "127.0.0.1"
 - To ensure IIS enabled, you should see something similar to the browser on the right, below
 </br>
