@@ -2,7 +2,7 @@
 <h1>osTicket - Prerequisites and Installation</h1>
 This is a walkthrough of the installation and set up for the open-source ticketing software, osTicket. You can use this walkthrough to follow along and even try it for yourself.<br />
 
-</br>
+<br/>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -21,7 +21,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - osTicket Installation Files
 - Heidi SQL
 
-</br>
+<br/>
 
 <h2>Installation Steps</h2>
 
@@ -31,7 +31,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Make sure it auto populates to "RG-osTicket" for its resource group before the Review and Create step
 - Note the username and password you're creating for Windows 10
 
-</br>
+<br/>
 
 <p>
 <img width="812" alt="Screen Shot 2023-06-25 at 12 16 22 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/c17f13b1-04be-4c8d-ba37-f9db0340b4db"></p>
@@ -45,13 +45,13 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_Make sure to checkmark the bottom part about licensing so you don't run into any issues._**
 
-</br>
+<br/>
 
 **Step 2: Log into the VM via RDP**
 - Copy the Public IP Address from the VM (Virutal Machines > "vm-osticket" > copy Public IP address)
 - Log in, using your Windows 10 username and password
 
-</br>
+<br/>
 
 <p>
 <img width="835" alt="Screen Shot 2023-06-25 at 12 21 31 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/16904f4f-b371-4903-9719-703e74ffea4c">
@@ -59,7 +59,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_This what RDP looks like on a Mac. You'll use the username and password you created when you set up Windows in the VM, here._**
 
-</br>
+<br/>
 
 **Step 3: Enable Internet Information Services (IIS)**
 - Open IIS from the start menu (Right click start menu > Run > type in "control" > Programs > Programs and Features > Turn Windows Features on or off
@@ -68,7 +68,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Under IIS > World Wide Web Services > Common HTTP Features, turn on all of the options here
 - Click OK and allow it to install
 
-</br>
+<br/>
 
 <p>
 <img width="778" alt="Screen Shot 2023-06-25 at 12 24 54 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/650ba206-1435-4cbd-87a7-5622e959a694">
@@ -82,12 +82,12 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_You'll find Internet Information Services you can install in this list. Make sure to turn on Web Management Tools if it's not on, as well._**
 
-</br>
+<br/>
 
 **Step 4: Test IIS**
 - Open a web broswer tab and type in "127.0.0.1"
 - To ensure IIS enabled, you should see something similar to the browser on the right, below
-</br>
+<br/>
 
 <p>
 <img width="797" alt="Screen Shot 2023-06-26 at 10 03 05 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/3ad1c78e-d865-4149-a072-accd8a18f869">
@@ -95,7 +95,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_The left image shows the browser when you visit 127.0.0.1, before installing IIS. The right is what it looks like when it's up and running._**
 
-</br>
+<br/>
 
 **Step 5: Install the Requirements**
 - Make sure to override any additional security prompts if you see them
@@ -105,7 +105,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Download PHP 7.3.8 files (be on the look for any extra prompts) > Right click > Extract All > Browse to the "PHP" folder > Extract
 - Download and install VC Redistributable
 
-</br>
+<br/>
 
 <p>
 <img width="935" alt="Screen Shot 2023-06-26 at 4 54 13 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/0da5b2b3-1750-4f49-8c4c-69e371bfff67">
@@ -113,7 +113,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_When you're installing files, you'll need to accept their terms and make sure you download files onto your VM._**
 
-</br>
+<br/>
 
 **Step 6: Install and Configure MySQL**
 - Download and install MySQL 5.5.62
@@ -122,7 +122,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Choose a "Standard Configuration"
 - Use a simple password such as "Password1" _(Note: Always choose strong passwords in actual production)_
 
-</br>
+<br/>
 
 <p>
 <img width="500" alt="Screen Shot 2023-06-25 at 12 42 16 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/d5432980-7d50-4df6-b88e-7f7b1693df2a">
@@ -130,14 +130,14 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 **_The MySQL setup is straightforward, just make sure you launch the Configuration Wizard at the end._**
 </p>
 
-</br>
+<br/>
 
 **Step 7: Make Changes in the IIS Admin Panel**
 - Search for IIS > Right click it to run it as admin
 - At the "vm-osticket" level, open the PHP Manager > Select a principal > browse to and open the php.cgi file
 - At rhe "vm-osticket" level, restart the server from the right sidebar menu
 
-</br>
+<br/>
 
 <p>
 <img width="1039" alt="Screen Shot 2023-06-25 at 12 45 47 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/01d2b90c-94cc-4d71-84fb-3925afb9ca70">
@@ -145,7 +145,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_This image shows you what it looks like before you register PHP in the admin panel for IIS._**
 
-</br>
+<br/>
 
 **Step 8: Install osTicket Files and Set Up Installer**
 - Download osTicket files
@@ -156,7 +156,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Navigate to Sites > Default > osTicket
 - From the right sidebar, click "Browse *:80"
 
-</br>
+<br/>
 
 <img width="1230" alt="Screen Shot 2023-06-25 at 12 47 14 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/1a13b8ef-070e-485d-aec7-277af282d283">
 
@@ -166,7 +166,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_At this point, osTicket Installer should open in the browser. If it's not, there is an error in the setup._**
 
-</br>
+<br/>
 
 **Step 9: Enabling PHP Extensions and Configuring File Permissions**
 - Navigate back Sites > Default > osTicket in the admin IIS panel
@@ -178,7 +178,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Right click on the folder > Advanced > Disable Inheritance > Remove All
 - Set New Permissions > Everyone (click "Check Names" to populate) > Check All permissions and apply them
 
-</br>
+<br/>
 
 <img width="601" alt="Screen Shot 2023-06-25 at 12 59 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/018602fe-a6e9-4e3c-82e1-82a3811524fa">
 
@@ -188,13 +188,13 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **_We give full control here to the ost-config.php file here so the software can do what it needs to on the backend._**
 
-</br>
+<br/>
 
 **Step 10: Continue Setting Up in the Browser**
 - Click Continue
 - Fill out each part of the form - choose a name, default email, and user information
 
-</br>
+<br/>
 
 **Step 11: Install HeidiSQL**
 - Download and open Heidi SQL
@@ -202,20 +202,20 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 - Create a new session connection 
 - Open a connection and right click to create a database called "osTicket"
 
-</br>
+<br/>
 
 <img width="935" alt="Screen Shot 2023-06-25 at 1 35 35 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/c21a7d33-6683-4f79-8a6f-caed8a05dc4a">
 
 **_Heidi SQL allows us to go ahead and set up a MySQL database for our ticketing software to use._**
 
-</br>
+<br/>
 
 **Step 12: Finish Setup in the Broswer**
 - MySQL DB: osTicket
 - MySQL user/password: root/Password1
 - Click Install Now
 
-</br>
+<br/>
 
 <img width="606" alt="Screen Shot 2023-06-25 at 1 37 45 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8e5c48a9-4201-4930-b0f3-ae36b32f69c9">
 
