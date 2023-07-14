@@ -18,7 +18,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 <h2>List of Prerequisites</h2>
 
 - Microsoft Azure Virtual Machine
-- osTicket Installation Files
+- osTicket Installation Files: [Installation Files](https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 - Heidi SQL
 
 <br/>
