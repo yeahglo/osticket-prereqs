@@ -100,7 +100,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 **Step 5: Install the Requirements**
 - Make sure to override any additional security prompts if you see them
 - Download and install PHP Manager for IIS
-- Install Rewrite Module
+- Download and install Rewrite Module
 - Create C:\PHP directory by going to C: Drive > Right click > New > Folder > name it "PHP"
 - Download PHP 7.3.8 files (be on the look for any extra prompts) > Right click > Extract All > Browse to the "PHP" folder > Extract
 - Download and install VC Redistributable
@@ -164,7 +164,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 <img width="1036" alt="Screen Shot 2023-06-25 at 12 54 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8138f47e-57a8-4fd3-bc92-f5f140847e6c">
 
-**_At this point, osTicket Installer should open in the browser. If it's not, there is an error in the setup._**
+**_Click on Browse *:80 on the right sidebar. It should open a tab in the browser._**
 
 <br/>
 
@@ -182,7 +182,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 <img width="601" alt="Screen Shot 2023-06-25 at 12 59 11 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/018602fe-a6e9-4e3c-82e1-82a3811524fa">
 
-**_This is the first success page, you did it! Next, you'll need to enable the three PHP extensions._**
+**_This is the success page before we enable the PHP extensions._**
 
 <img width="919" alt="Screen Shot 2023-06-25 at 1 46 28 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/bc3e8919-431e-42ee-b85a-636aac7e5d4b">
 
@@ -198,7 +198,7 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 **Step 11: Install HeidiSQL**
 - Download and open Heidi SQL
-- Username will be "root", Password will be "Password1" _(Note: Never do this in actual production.)_
+- Username will be "root", the password will be "Password1" _(Note: Never do this in actual production.)_
 - Create a new session connection 
 - Open a connection and right click to create a database called "osTicket"
 
@@ -210,7 +210,8 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 
 <br/>
 
-**Step 12: Finish Setup in the Broswer**
+**Step 12: Finish the Setup in the Broswer**
+- Enter the following in the rest of the form
 - MySQL DB: osTicket
 - MySQL user/password: root/Password1
 - Click Install Now
@@ -220,3 +221,8 @@ This is a walkthrough of the installation and set up for the open-source ticketi
 <img width="606" alt="Screen Shot 2023-06-25 at 1 37 45 PM" src="https://github.com/yeahglo/osticket-prereqs/assets/91516100/8e5c48a9-4201-4930-b0f3-ae36b32f69c9">
 
 **_You should now see a success page. Make sure to copy these links for the next step._**
+
+<h2>Next Steps</h2>
+
+Now that the prerequisites are set up, continue to the second part for configuration.
+[Post-install Configuration](https://github.com/yeahglo/post-install-config)
