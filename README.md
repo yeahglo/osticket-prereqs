@@ -3,10 +3,12 @@
 This is a walkthrough of the installation and set up for the open-source ticketing software, osTicket. You can use this walkthrough to follow along and even try it for yourself.<br />
 
 <h2>Introduction</h2>
-With osTicketing software, end users and help desk agents can collaborate on support requests.During this setup, we’ll be installing osTicket, along with the necessary requirements for it to work properly for our use case.
+<p>With osTicketing software, end users and help desk agents can collaborate on support requests.During this setup, we’ll be installing osTicket, along with the necessary requirements for it to work properly for our use case.
+</p>
 
+<p>
 In related walk throughs, we’ll configure the settings for the software and work through an example ticket.
-<br/>
+</p>
 
 <h2>Environments and Technologies Used</h2>
 
