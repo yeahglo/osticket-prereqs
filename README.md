@@ -12,7 +12,7 @@ In related walk throughs, we’ll configure the settings for the software and wo
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure
+- Microsoft Azure Virtual Machine
 - Microsoft Remote Desktop
 - Internet Information Services (IIS)
 - PHP 7.3.8 & MySQL
